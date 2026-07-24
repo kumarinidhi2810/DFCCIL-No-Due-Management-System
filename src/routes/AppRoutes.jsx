@@ -15,7 +15,7 @@ import Requests from "../pages/departmentAdmin/Requests";
 import RequestDetails from "../pages/departmentAdmin/RequestDetails";
 import Profile from "../pages/departmentAdmin/Profile";
 import ApplyNoDue from "../pages/employee/ApplyNoDue";
-import Certificate from "../pages/employee/Certificate";
+import Certificate from "../pages/employee/certificate";
 import RequestHistory from "../pages/employee/RequestHistory";
 import ApprovedRequests from "../pages/provider/ApprovedRequests";
 import PendingRequests from "../pages/provider/PendingRequests"
