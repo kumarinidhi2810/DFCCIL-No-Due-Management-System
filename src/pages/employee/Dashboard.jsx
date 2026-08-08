@@ -4,7 +4,7 @@ import AssignmentTurnedInRoundedIcon from "@mui/icons-material/AssignmentTurnedI
 import HourglassTopRoundedIcon from "@mui/icons-material/HourglassTopRounded";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import CancelRoundedIcon from "@mui/icons-material/CancelRounded";
-
+import ChatBot from "../../components/ChatBot/ChatBot";
 import WelcomeBanner from "../../components/dashboard/WelcomeBanner";
 import StatCard from "../../components/dashboard/StatCard";
 
@@ -88,6 +88,11 @@ const rejected = myRequests.filter(
 }
 />
         </Grid>
+        <>
+  {/* Existing Dashboard Content */}
+
+  <ChatBot />
+</>
 
       </Grid>
     </>
