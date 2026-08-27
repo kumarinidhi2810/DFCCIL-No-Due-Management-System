@@ -56,12 +56,9 @@ const handleClose = () => {
 
       {/* HEADER */}
       <Typography variant="h4" fontWeight={700}>
-        Departments Management
+        Departments 
       </Typography>
 
-      <Typography color="text.secondary" mb={4}>
-        Manage all departments of organization.
-      </Typography>
 
     
 

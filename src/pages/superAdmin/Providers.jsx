@@ -81,12 +81,10 @@ const filteredProviders = providers.filter((provider) => {
 
       {/* HEADER */}
       <Typography variant="h4" fontWeight={700}>
-        Providers Management
+        Providers 
       </Typography>
 
-      <Typography color="text.secondary" mb={4}>
-        Manage all service providers of organization
-      </Typography>
+      
 
         <Grid item xs={12} md={6} textAlign="right">
           <Button

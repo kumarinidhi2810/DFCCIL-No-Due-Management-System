@@ -7,8 +7,6 @@ import {
   Button,
   Divider,
 } from "@mui/material";
-
-import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import MiscellaneousServicesOutlinedIcon from "@mui/icons-material/MiscellaneousServicesOutlined";
 import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
@@ -62,13 +60,7 @@ function Dashboard() {
   };
 
   const cards = [
-{
-  title: "Department Admins",
-  value: employees.length,
-  icon: <PeopleAltOutlinedIcon />,
-  color: "#2563EB",
-  path: "/super-admin/department-admins",
-},
+
     {
       title: "Departments",
       value: departments.length,
@@ -123,58 +115,45 @@ function Dashboard() {
 
   return (
     <Box
-      sx={{
-        p: 4,
-        background: "#F4F6F8",
-        minHeight: "100vh",
-      }}
-    >
-
-      {/* HEADER */}
-      <Box mb={4}>
-        <Typography
-          variant="h4"
-          fontWeight={700}
-          color="#172B4D"
-        >
-          Super Admin Dashboard
-        </Typography>
-
-       
-      </Box>
+  sx={{
+    px: { xs: 2, sm: 3, md: 4 },
+    py: { xs: 2.5, md: 3 },
+    background: "#F7F8FA",
+    minHeight: "100vh",
+  }}
+>
 
       {/* CARDS */}
-      <Grid container spacing={2.5} mb={4}>
+      <Grid container spacing={2} mb={3.5}>
   {cards.map((card) => (
-    <Grid
-      item
-      xs={12}
-      sm={6}
-      md={3}
-      key={card.title}
-    >
+<Grid
+  item
+  xs={12}
+  sm={6}
+  md={2}
+  key={card.title}
+>
       <Paper
         elevation={0}
           onClick={() => navigate(card.path)}
 
         sx={{
-          p: 2,
-          minHeight: 150,
-          borderRadius: 2,
-          border: "1px solid #E5E7EB",
-          background: "#FFFFFF",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          transition: "0.2s",
-          cursor: "pointer",
+  p: 1.75,
+  minHeight: 120,
+  borderRadius: "10px",
+  border: "1px solid #E4E7EC",
+  background: "#FFFFFF",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  transition: "all 0.18s ease",
+  cursor: "pointer",
 
-          "&:hover": {
-            borderColor: card.color,
-            boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
-             transform: "translateY(-2px)",
-          },
-        }}
+  "&:hover": {
+    borderColor: "#D0D5DD",
+    boxShadow: "0 4px 12px rgba(16, 24, 40, 0.08)",
+  },
+}}
       >
         {/* TOP */}
         <Box
@@ -186,8 +165,8 @@ function Dashboard() {
         >
           <Typography
             sx={{
-              fontSize: "14px",
-              fontWeight: 600,
+              fontSize: "28px",
+              fontWeight: 700,
               color: "#475569",
             }}
           >
@@ -196,10 +175,10 @@ function Dashboard() {
 
           <Box
             sx={{
-              width: 36,
-              height: 36,
-              borderRadius: 1.5,
-              background: `${card.color}15`,
+              width: 32,
+              height: 32,
+              borderRadius: "8px",
+              background: `${card.color}12`,
               color: card.color,
               display: "flex",
               alignItems: "center",
@@ -213,27 +192,27 @@ function Dashboard() {
         {/* VALUE */}
         <Typography
           sx={{
-            fontSize: "30px",
+            fontSize: "25px",
             fontWeight: 700,
-            color: "#111827",
+            color: "#111828",
             lineHeight: 1,
-            mt: 2,
+            mt: 1,
           }}
         >
           {card.value}
         </Typography>
 
         {/* FOOTER */}
-        <Typography
-          sx={{
-            fontSize: "12px",
-            color: card.color,
-            mt: 1,
-            fontWeight: 600,
-          }}
-        >
-          View details →
-        </Typography>
+       <Typography
+  sx={{
+    fontSize: "11px",
+    color: "#667085",
+    mt: 1,
+    fontWeight: 500,
+  }}
+>
+  View details →
+</Typography>
       </Paper>
     </Grid>
   ))}
@@ -241,12 +220,14 @@ function Dashboard() {
 
       {/* REQUEST TICKETS */}
       <Paper
-        sx={{
-          borderRadius: 2,
-          border: "1px solid #E5E7EB",
-          overflow: "hidden",
-        }}
-      >
+  elevation={0}
+  sx={{
+    borderRadius: "10px",
+    border: "1px solid #E4E7EC",
+    background: "#FFFFFF",
+    overflow: "hidden",
+  }}
+>
 
         <Box
           px={3}

@@ -68,12 +68,10 @@ useEffect(() => {
     <Box sx={{ p: 4, background: "#F5F7FA", minHeight: "100vh" }}>
 
       <Typography variant="h4" fontWeight={700}>
-        Employee Management
+        Employee 
       </Typography>
 
-      <Typography color="text.secondary" mb={4}>
-        Manage employees of the organization.
-      </Typography>
+      
 
     
 

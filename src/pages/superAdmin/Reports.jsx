@@ -122,7 +122,7 @@ const rejected = requests.filter(
             mt: 0.5,
           }}
         >
-          Monitor No Due request performance and approval activity
+          
         </Typography>
       </Box>
 
